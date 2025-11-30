@@ -1,0 +1,70 @@
+# ============================
+# UNITY 6.x / 2023 / 2022
+# .gitignore Oficial Recomendado
+# ============================
+
+# --- UNITY ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+Recordings/
+
+# Visual Scripting
+VisualScripting/
+
+# Nuevo cache de Unity (2022+)
+Artifacts/
+DerivedData/
+
+# Asset Store
+Assets/AssetStoreTools*
+
+# Solo si usas Cache Server local
+UnityCache/
+
+# --- Visual Studio / C# ---
+ExportedObj/
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Autogenerado por JetBrains Rider
+.idea/
+*.DotSettings.user
+
+# --- Sistema operativo ---
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# --- Otros ---
+*.apk
+*.aab
+*.unitypackage
+
+# Crash Reports
+sysinfo.txt
+
+# Build meta basura
+*.apk.meta
+*.aab.meta
