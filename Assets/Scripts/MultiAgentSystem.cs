@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -41,8 +42,8 @@ public class MultiAgentSystem : MonoBehaviour
     {
         Color[] tileColors = new Color[]
         {
-            new Color(0.85f, 0.85f, 0.85f), // Gris claro
-            new Color(0.6f, 0.6f, 0.6f)     // Gris oscuro
+            new Color(0.85f, 0.85f, 0.85f),
+            new Color(0.6f, 0.6f, 0.6f)
         };
 
         for (int x = 0; x < gridSize; x++)
@@ -181,6 +182,8 @@ public class MultiAgentSystem : MonoBehaviour
 
                 foreach (var agentData in agentsData)
                 {
+                    Debug.Log($"[SERVER → UNITY] Agente {agentData.id} → Pos({agentData.x}, {agentData.y})");
+
                     if (agents.ContainsKey(agentData.id))
                     {
                         Vector3 newPos = new Vector3(agentData.x, 0.5f, agentData.y);
